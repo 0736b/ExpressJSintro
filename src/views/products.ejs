@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- Skills and intrest section -->
+	<div class="container">
+
+		<div class="sections">
+			<h2 class="section-title">Products</h2>
+			<% products.map((product) => { %>
+				<div class="list-card">
+					<div>
+						<h3>ชื่อ <%=product.productTitle%></h3>
+						<span>รายละเอียด <%=product.productDescription%></span>
+						<span>ราคา <%=product.productPrice%> บาท</span>
+					</div>
+				</div>
+			<% }) %>
+	<br><br>
+	</div>
+</body>
+</html>
