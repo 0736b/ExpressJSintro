@@ -14,7 +14,7 @@ app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.render('index', {username: '0736b'});
+    res.render('index', {username: '0736b', customer: ['customer1', 'customer2', 'customer3']});
 })
 
 app.listen(PORT, () => {
