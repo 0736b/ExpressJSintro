@@ -1,0 +1,24 @@
+{
+    "products": [
+        {
+            "productTitle": "Cyanide",
+            "productDescription": "Acid toxic",
+            "productPrice": 199
+        },
+        {
+            "productTitle": "Cyanide",
+            "productDescription": "Acid toxic",
+            "productPrice": 199
+        },
+        {
+            "productTitle": "Cyanide",
+            "productDescription": "Acid toxic",
+            "productPrice": 199
+        },
+        {
+            "productTitle": "Cyanide",
+            "productDescription": "Acid toxic",
+            "productPrice": 199
+        }
+    ]
+}

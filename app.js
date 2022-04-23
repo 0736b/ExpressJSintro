@@ -3,6 +3,7 @@ const chalk = require('chalk')
 const debug = require('debug')('app');
 const morgan = require('morgan');
 const path = require('path');
+const products = require('./data/products.json');
 const productRouter = express.Router();
 
 const app = express();
@@ -15,14 +16,9 @@ app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 productRouter.route('/').get((req,res) => {
-    res.render('products', {
-        products:[
-            {productTitle: 'Cyanide', productDescription: 'Acid toxic', productPrice: 199},
-            {productTitle: 'Cyanide', productDescription: 'Acid toxic', productPrice: 199},
-            {productTitle: 'Cyanide', productDescription: 'Acid toxic', productPrice: 199},
-            {productTitle: 'Cyanide', productDescription: 'Acid toxic', productPrice: 199}
-        ]
-    })
+    res.render('products', 
+        products,
+    )
 });
 
 app.use('/products', productRouter)
